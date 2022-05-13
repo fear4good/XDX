@@ -4,6 +4,7 @@ package xdx;
 import xdx.Main_Class;
 import javax.swing.JFrame;
 import xdx.Create_Offer;
+import xdx.Evaluate_FC;
 import xdx.Edit_Store;
 
 public class Business extends javax.swing.JFrame {
@@ -27,7 +28,7 @@ public class Business extends javax.swing.JFrame {
         showOrders = new javax.swing.JButton();
         createOffer = new javax.swing.JButton();
         editStore = new javax.swing.JButton();
-        communication1 = new javax.swing.JButton();
+        evaluation = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -127,12 +128,12 @@ public class Business extends javax.swing.JFrame {
             }
         });
 
-        communication1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        communication1.setText("Evaluation from Customers");
-        communication1.setBorderPainted(false);
-        communication1.addActionListener(new java.awt.event.ActionListener() {
+        evaluation.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        evaluation.setText("Evaluation from Customers");
+        evaluation.setBorderPainted(false);
+        evaluation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                communication1ActionPerformed(evt);
+                evaluationActionPerformed(evt);
             }
         });
 
@@ -144,7 +145,7 @@ public class Business extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(141, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(communication1, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(evaluation, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(editStore, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(createOffer, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(showOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -161,7 +162,7 @@ public class Business extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(createOffer, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
-                .addComponent(communication1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(evaluation, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(113, Short.MAX_VALUE))
         );
 
@@ -215,9 +216,14 @@ public class Business extends javax.swing.JFrame {
         this.dispose(); 
     }//GEN-LAST:event_editStoreActionPerformed
 
-    private void communication1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_communication1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_communication1ActionPerformed
+    private void evaluationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evaluationActionPerformed
+        Evaluate_FC ef = new Evaluate_FC();
+        ef.setVisible(true);
+        ef.pack();
+        ef.setLocationRelativeTo(null);
+        ef.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose(); 
+    }//GEN-LAST:event_evaluationActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -255,9 +261,9 @@ public class Business extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton communication1;
     private javax.swing.JButton createOffer;
     private javax.swing.JButton editStore;
+    private javax.swing.JButton evaluation;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

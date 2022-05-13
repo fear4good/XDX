@@ -47,7 +47,7 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="141" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="communication1" min="-2" pref="277" max="-2" attributes="0"/>
+                      <Component id="evaluation" min="-2" pref="277" max="-2" attributes="0"/>
                       <Component id="editStore" min="-2" pref="277" max="-2" attributes="0"/>
                       <Component id="createOffer" min="-2" pref="277" max="-2" attributes="0"/>
                       <Component id="showOrders" min="-2" pref="277" max="-2" attributes="0"/>
@@ -67,7 +67,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="createOffer" min="-2" pref="45" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                  <Component id="communication1" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="evaluation" min="-2" pref="45" max="-2" attributes="0"/>
                   <EmptySpace pref="113" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -212,7 +212,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editStoreActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="communication1">
+        <Component class="javax.swing.JButton" name="evaluation">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="0"/>
@@ -221,7 +221,7 @@
             <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="communication1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="evaluationActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
