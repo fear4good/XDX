@@ -1,4 +1,4 @@
-package xdx.java;
+package xdx;
 
 import main.java.Classes.Business;
 import Classes.Customer;
@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
-import xdx.java.Free_Customer;
+import xdx.Free_Customer;
 
 public class Main_Class extends javax.swing.JFrame {
 
@@ -277,7 +277,7 @@ public class Main_Class extends javax.swing.JFrame {
 
                  case "Business":
                     Business.setID(Id);
-                    xdx.java.Business ad = new xdx.java.Business();
+                    xdx.Business ad = new xdx.Business();
                     ad.setVisible(true);
                     ad.pack();
                     ad.setLocationRelativeTo(null);

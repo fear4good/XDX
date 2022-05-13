@@ -1,7 +1,6 @@
-package xdx.java;
+package xdx;
 
 import main.java.Classes.MyConnection;
-import xdx.java.Main_Class;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
