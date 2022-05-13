@@ -1,16 +1,14 @@
 package xdx;
 
-
 import xdx.Main_Class;
 import javax.swing.JFrame;
-import xdx.Create_Offer;
-import xdx.Edit_Store;
+import xdx.Chose_market;
+import xdx.Evaluate;
+import xdx.Properties;
 
-public class Business extends javax.swing.JFrame {
+public class Premium_Customer extends javax.swing.JFrame {
 
- 
-
-    public Business() {
+    public Premium_Customer() {
         initComponents();
     }
 
@@ -24,19 +22,17 @@ public class Business extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         log_out1 = new javax.swing.JButton();
-        showOrders = new javax.swing.JButton();
-        createOffer = new javax.swing.JButton();
-        editStore = new javax.swing.JButton();
-        communication1 = new javax.swing.JButton();
+        Evaluation = new javax.swing.JButton();
+        favouriteProducts = new javax.swing.JButton();
+        Store = new javax.swing.JButton();
+        Profile = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel2.setForeground(new java.awt.Color(255, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
 
-        jLabel10.setBackground(new java.awt.Color(0, 0, 0));
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel10.setText("XDX");
         jLabel10.setToolTipText("");
@@ -63,7 +59,7 @@ public class Business extends javax.swing.JFrame {
             .addGap(0, 427, Short.MAX_VALUE)
         );
 
-        log_out1.setBackground(new java.awt.Color(255, 51, 51));
+        log_out1.setBackground(new java.awt.Color(153, 204, 255));
         log_out1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         log_out1.setText("Logout");
         log_out1.setBorderPainted(false);
@@ -100,39 +96,37 @@ public class Business extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        showOrders.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        showOrders.setText("Show Orders");
-        showOrders.setBorderPainted(false);
-        showOrders.addActionListener(new java.awt.event.ActionListener() {
+        Evaluation.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Evaluation.setText("Evaluation XDX");
+        Evaluation.setBorderPainted(false);
+        Evaluation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                showOrdersActionPerformed(evt);
+                EvaluationActionPerformed(evt);
             }
         });
 
-        createOffer.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        createOffer.setText("Create an Offer");
-        createOffer.setBorderPainted(false);
-        createOffer.addActionListener(new java.awt.event.ActionListener() {
+        favouriteProducts.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        favouriteProducts.setText("Add Favourite Products");
+        favouriteProducts.setBorderPainted(false);
+        favouriteProducts.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createOfferActionPerformed(evt);
+                favouriteProductsActionPerformed(evt);
             }
         });
 
-        editStore.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        editStore.setText("Edit Store");
-        editStore.setBorderPainted(false);
-        editStore.addActionListener(new java.awt.event.ActionListener() {
+        Store.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Store.setText("XDX Store");
+        Store.setBorderPainted(false);
+        Store.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editStoreActionPerformed(evt);
+                StoreActionPerformed(evt);
             }
         });
 
-        communication1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        communication1.setText("Evaluation from Customers");
-        communication1.setBorderPainted(false);
-        communication1.addActionListener(new java.awt.event.ActionListener() {
+        Profile.setText("Profile");
+        Profile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                communication1ActionPerformed(evt);
+                ProfileActionPerformed(evt);
             }
         });
 
@@ -141,28 +135,28 @@ public class Business extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(141, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(communication1, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(editStore, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(createOffer, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(showOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(92, 92, 92))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(136, 136, 136)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Evaluation, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Profile, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Store, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(favouriteProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
-                .addComponent(editStore, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(showOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(favouriteProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(createOffer, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(communication1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addComponent(Store, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Profile, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Evaluation, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(91, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -173,7 +167,9 @@ public class Business extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -188,36 +184,42 @@ public class Business extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_log_out1ActionPerformed
 
-    private void showOrdersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showOrdersActionPerformed
-        Show_Orders so = new  Show_Orders();
-        so.setVisible(true);
-        so.pack();
-        so.setLocationRelativeTo(null);
-        so.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    private void EvaluationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EvaluationActionPerformed
+        Evaluate mc= new  Evaluate();
+        mc.setVisible(true);
+        mc.pack();
+        mc.setLocationRelativeTo(null);
+        mc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
-    }//GEN-LAST:event_showOrdersActionPerformed
+    }//GEN-LAST:event_EvaluationActionPerformed
 
-    private void createOfferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createOfferActionPerformed
-        Create_Offer co = new  Create_Offer();
-        co.setVisible(true);
-        co.pack();
-        co.setLocationRelativeTo(null);
-        co.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    private void favouriteProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_favouriteProductsActionPerformed
+        Premium_AddToFavourite patf = new  Premium_AddToFavourite();
+        patf.setVisible(true);
+        patf.pack();
+        patf.setLocationRelativeTo(null);
+        patf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
-    }//GEN-LAST:event_createOfferActionPerformed
+    }//GEN-LAST:event_favouriteProductsActionPerformed
 
-    private void editStoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editStoreActionPerformed
-        Edit_Store es = new  Edit_Store();
-        es.setVisible(true);
-        es.pack();
-        es.setLocationRelativeTo(null);
-        es.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.dispose(); 
-    }//GEN-LAST:event_editStoreActionPerformed
+    private void StoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StoreActionPerformed
+        Chose_market cm= new  Chose_market();
+        cm.setVisible(true);
+        cm.pack();
+        cm.setLocationRelativeTo(null);
+        cm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_StoreActionPerformed
 
-    private void communication1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_communication1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_communication1ActionPerformed
+    private void ProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfileActionPerformed
+        Properties mc= new  Properties();
+        mc.setVisible(true);
+        mc.pack();
+        mc.setLocationRelativeTo(null);
+        mc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_ProfileActionPerformed
+
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -233,13 +235,13 @@ public class Business extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Business.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Premium_Customer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Business.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Premium_Customer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Business.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Premium_Customer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Business.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Premium_Customer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -249,25 +251,21 @@ public class Business extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Business().setVisible(true);
+                new Premium_Customer().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton communication1;
-    private javax.swing.JButton createOffer;
-    private javax.swing.JButton editStore;
+    private javax.swing.JButton Evaluation;
+    private javax.swing.JButton Profile;
+    private javax.swing.JButton Store;
+    private javax.swing.JButton favouriteProducts;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JButton log_out1;
-    private javax.swing.JButton showOrders;
     // End of variables declaration//GEN-END:variables
-
-    void validateOrder() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
