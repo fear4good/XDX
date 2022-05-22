@@ -2,7 +2,7 @@ package xdx;
 
 import main.java.Classes.MyConnection;
 import main.java.Classes.Business;
-import Classes.Customer;
+import main.java.Classes.Customer;
 import main.java.Classes.Product;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
