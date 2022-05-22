@@ -1,9 +1,9 @@
 package xdx;
 
-import main.java.Classes.MyConnection;
-import main.java.Classes.Business;
-import main.java.Classes.Customer;
-import main.java.Classes.Product;
+import Classes.MyConnection;
+import Classes.Business;
+import Classes.Customer;
+import Classes.Product;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,6 +1,6 @@
 package xdx;
 
-import main.java.Classes.Business;
+import Classes.Business;
 import Classes.Offers;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import main.java.Classes.MyConnection;
+import Classes.MyConnection;
 
 public class Create_Offer extends javax.swing.JFrame {
 
