@@ -5,10 +5,6 @@
  */
 package main.java.Classes;
 
-/**
- *
- * @author Michalis
- */
 public class Markets {
     private  static int id;
     private String BusinessName;
